@@ -45,28 +45,6 @@ with st.sidebar:
     st.title("🚢 Titanic AI Chatbot")
     st.markdown("Ask questions about the Titanic dataset and get instant insights.")
 
-    st.divider()
-
-    # Backend Health Check
-    try:
-        health = requests.get(HEALTH_URL, timeout=3)
-        if health.status_code == 200:
-            st.success("✅ Backend Online")
-        else:
-            st.error("❌ Backend Error")
-    except Exception:
-        st.error("❌ Backend Offline")
-
-    st.divider()
-
-    # Dataset Summary
-    if titanic_df is not None:
-        st.subheader("Dataset Summary")
-        st.markdown(f"**Total Passengers:** {len(titanic_df)}")
-        st.markdown(f"**Survival Rate:** {titanic_df['Survived'].mean()*100:.2f}%")
-        st.markdown(f"**Average Fare:** ${titanic_df['Fare'].mean():.2f}")
-    else:
-        st.warning("Dataset not loaded")
 
     st.divider()
 
