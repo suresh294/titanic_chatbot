@@ -1,6 +1,10 @@
 # 🚢 Titanic AI Chatbot
 
-A production-ready, conversational AI chatbot that answers natural-language questions about the **Titanic passenger dataset** using **LangChain**, **Groq (LLaMA 3)**, **FastAPI**, and **Streamlit**.
+[![CI](https://github.com/suresh294/titanic_chatbot/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/suresh294/titanic_chatbot/actions/workflows/ci.yml)
+
+A learning project that answers natural-language questions about the **Titanic passenger dataset** using **LangChain**, **Groq**, **FastAPI**, and **Streamlit**. The current workflow is syntax-checked by CI; it is not presented as a production-ready service.
+
+> **Demo status:** A verified public deployment URL has not been confirmed. Use the local setup below.
 
 ---
 
